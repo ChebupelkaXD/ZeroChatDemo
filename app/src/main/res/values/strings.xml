@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Zero Chat demo</string>
+    <string name="welcom">Приветики!</string>
+    <string name="login_please">Зарегестрируйтесь, пожалуйста...</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="creat_new_account">У меня еще нет аккаунта</string>
+    <string name="create_your_account">Создайте свой аккаунт</string>
+    <string name="add_image">Аватарка</string>
+    <string name="name">Имя</string>
+    <string name="confirm_password">Повторите пароль</string>
+    <string name="create">Создать</string>
+    <string name="i_already_have">У меня уже есть</string>
 </resources>
