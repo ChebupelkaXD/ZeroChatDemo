@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "211636626654",
+    "project_id": "zerochat-demo",
+    "storage_bucket": "zerochat-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211636626654:android:e06d9762e4daf293ab8e4f",
+        "android_client_info": {
+          "package_name": "com.example.zerochatdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211636626654-2dv56pb95re9s1bg2uvd1n957u9vssej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdkCsi-BdhuJnET6ohlf5H8-kqtTeGTvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211636626654-2dv56pb95re9s1bg2uvd1n957u9vssej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
