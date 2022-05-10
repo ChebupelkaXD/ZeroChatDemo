@@ -1,8 +1,10 @@
-package com.example.zerochatdemo;
+package com.example.zerochatdemo.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.zerochatdemo.R;
 
 public class MainActivity extends AppCompatActivity {
 
