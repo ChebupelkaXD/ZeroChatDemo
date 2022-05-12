@@ -63,7 +63,7 @@ public class SignInActivity extends AppCompatActivity {
                         startActivity(intent);
                     }else {
                         loading(false);
-                        showToast("Unable to sign in");
+                        showToast("Не верный логин или пароль");
                     }
                 });
     }
@@ -84,13 +84,13 @@ public class SignInActivity extends AppCompatActivity {
 
     private Boolean isValidSignInDetails() {
         if(binding.inputEmail.getText().toString().isEmpty()) {
-            showToast("Enter email");
+            showToast("Введите почту");
             return false;
         }else if(!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()) {
-            showToast("Enter valid email");
+            showToast("Введите действующую почту");
             return false;
         }else if(binding.inputPassword.getText().toString().trim().isEmpty()) {
-            showToast("Enter password");
+            showToast("Введите пароль");
             return false;
         } else {
             return true;

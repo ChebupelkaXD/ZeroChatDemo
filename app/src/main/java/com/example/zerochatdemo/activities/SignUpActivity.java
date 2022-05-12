@@ -119,25 +119,25 @@ public class SignUpActivity extends AppCompatActivity {
 
     private Boolean isValidSignUpDetails() {
         if(encodedImage == null) {
-            showToast("Select profile image");
+            showToast("Выберете фото для аватарки");
             return false;
         } else if(binding.inputName.getText().toString().trim().isEmpty()) {
-            showToast("Enter name");
+            showToast("Введите имя");
             return false;
         } else if(binding.inputEmail.getText().toString().trim().isEmpty()) {
-            showToast("Enter email");
+            showToast("Введите почту");
             return false;
         } else if(!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()) {
-            showToast("Enter valid image");
+            showToast("Введите действующий адрес почты");
             return false;
         } else if(binding.inputPassword.getText().toString().trim().isEmpty()) {
-            showToast("Enter password");
+            showToast("Введите пароль");
             return false;
         } else if(binding.inputConfirmPassword.getText().toString().trim().isEmpty()) {
-            showToast("Confirm your password");
+            showToast("Подтвердите пароль");
             return false;
-        } else if(binding.inputPassword.getText().toString().equals(binding.inputConfirmPassword.getText().toString())) {
-            showToast("Password & confirm password mustt be same");
+        } else if(!binding.inputPassword.getText().toString().equals(binding.inputConfirmPassword.getText().toString())) {
+            showToast("Пароли должны совпадать");
             return false;
         } else {
             return true;
