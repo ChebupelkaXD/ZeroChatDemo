@@ -12,4 +12,5 @@
     <string name="confirm_password">Повторите пароль</string>
     <string name="create">Создать</string>
     <string name="i_already_have">У меня уже есть</string>
+    <string name="select_user">Выберете пользователя</string>
 </resources>
