@@ -3,7 +3,7 @@ package com.example.zerochatdemo.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.view.View;//
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.zerochatdemo.adapters.UsersAdapter;
@@ -56,6 +56,7 @@ public class UsersActivity extends AppCompatActivity implements UserListener {
                             user.email = queryDocumentSnapshot.getString(Constants.KEY_EMAIL);
                             user.image = queryDocumentSnapshot.getString(Constants.KEY_IMAGE);
                             user.token = queryDocumentSnapshot.getString(Constants.KEY_FCM_TOKEN);
+                            user.id = queryDocumentSnapshot.getId();
                             users.add(user);
                         }
                         if(users.size() > 0) {
