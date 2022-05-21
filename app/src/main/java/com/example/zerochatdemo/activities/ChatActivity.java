@@ -147,7 +147,7 @@ public class ChatActivity extends BaseActivity {
                     }catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    showToast("Notification sent succesfully");
+                    ;
                 }else {
                     showToast("Error " + response.code());
                 }
@@ -253,7 +253,7 @@ public class ChatActivity extends BaseActivity {
     }
 
     private String getReadableDateTime(Date date) {
-        return new SimpleDateFormat("MMMM dd, yyyy - hh:mm", Locale.getDefault()).format(date);
+        return new SimpleDateFormat("dd MMMM, yyyy - hh:mm", Locale.getDefault()).format(date);
     }
 
     private void  addConversion(HashMap<String, Object> conversion) {

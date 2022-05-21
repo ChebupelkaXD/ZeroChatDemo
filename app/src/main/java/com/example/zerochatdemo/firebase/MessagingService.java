@@ -33,7 +33,7 @@ public class MessagingService extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         User user = new User();
         user.id = remoteMessage.getData().get(Constants.KEY_USER_ID);
-        user.name = remoteMessage.getData().get(Constants.KEY_FCM_TOKEN);
+        user.name = remoteMessage.getData().get(Constants.KEY_NAME);
         user.token = remoteMessage.getData().get(Constants.KEY_FCM_TOKEN);
 
         int notificationId = new Random().nextInt();
@@ -56,8 +56,8 @@ public class MessagingService extends FirebaseMessagingService {
         builder.setAutoCancel(true);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence channelName = "Chat Message";
-            String channelDescription = "This notification channel is used for chat message notifications";
+            CharSequence channelName = "Уведомления в чате";
+            String channelDescription = "Канал уведомлений о сообщениях в чате";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
             NotificationChannel channel = new NotificationChannel(channelId, channelName, importance);
             channel.setDescription(channelDescription);
